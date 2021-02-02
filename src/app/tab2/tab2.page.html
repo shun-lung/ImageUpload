@@ -13,5 +13,18 @@
     </ion-toolbar>
   </ion-header>
 
+
+  <ion-button expand="full">
+    <ion-icon lazy="true" slot="start" name="image"></ion-icon>
+    <ion-label slot="end">Upload Image</ion-label>
+    <input type="file" (change)="loadImageFromDevice($event)" id="file-input"
+      accept="image/png, image/jpeg">
+
+
+  </ion-button>
+  <!--SHOW THE IMAGES-->
+  <ion-label *ngIf="showText"> Show Image file </ion-label>
+  <ion-img [src]="preview" class="imgsize"></ion-img>
+
   <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>
