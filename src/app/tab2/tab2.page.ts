@@ -34,8 +34,6 @@ export class Tab2Page {
       // show image 
       this.preview =  blobURL;
       this.showText = false;
-      
-  
     };
   
     reader.onerror = (error) => {
