@@ -1,0 +1,98 @@
+// img{
+    
+//     height: 350px;
+//     width: 300px;
+    
+// }
+
+
+
+.large-text{
+    color:#bd5252; //large text h1 h2
+}
+.large-text.h2{
+
+    color:black;
+
+}
+
+.small-text{
+    color:blueviolet;
+}
+
+.ion-content-texthander{ 
+    font-size: large;
+    background-color: #bd5252;
+    color:blue;
+}
+
+.pages {
+    column-count: 2;
+    margin:0 auto;
+    background: #f1f1f1;
+    column-gap: 20px;
+    column-rule-style: solid;
+    height: 25%;
+    
+}
+
+
+.imgborder-radius{
+    margin:0 auto;
+    position: relative;
+    width: 100%;
+    height: 60%;
+    border-radius: 50%;
+
+}
+
+
+.imgborder-radius2{
+    position: relative;
+    margin:0 auto;
+    width: 100%;
+    height: 40%;
+   // border-radius: 10%;
+    padding: 1px;
+
+}
+
+.container {
+    position: relative;
+    max-width: 1024px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+    background: white;
+    background: #f1f1f1(0, 0, 0, 0.5);
+    
+   
+  }
+  
+  .container .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 5px; /* Some padding */
+   
+  }
+  
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .container {
+      flex: 50%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .container .content {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
